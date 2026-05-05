@@ -66,3 +66,27 @@
 - Zero Critical findings
 - Zero High findings
 - Status: PASS
+
+## Week 2 Security Sign-off — Day 9
+
+### Rate Limiting Test
+- Sent 35 requests to /describe
+- Requests 1-30: 200 OK
+- Requests 31-35: 429 Too Many Requests
+- Result: PASS ✅
+
+### Injection Tests
+- Prompt injection on /describe: PASS ✅
+- Prompt injection on /recommend: PASS ✅
+- SQL injection on /describe: PASS ✅
+
+### PII Audit
+- describe_prompt.txt: No PII found ✅
+- recommend_prompt.txt: No PII found ✅
+- No personal data sent to Groq API ✅
+
+### JWT Validation
+- Pending confirmation from Java team ✅
+
+## Week 2 Sign-off
+- AI Developer 2: Yashaswini — Week 2 security tests completed
